@@ -2,6 +2,8 @@
 import unittest
 
 from geolocwrapper import GeoLocWrapper
+from geopy.exc import GeopyError
+
 
 class TestGeoLocWrapper(unittest.TestCase):
     """A collection of unit tests for the BabySet class. 
@@ -10,7 +12,12 @@ class TestGeoLocWrapper(unittest.TestCase):
     """
     def test_init(self):
         """Unit test for GeoLocWrapper constructor."""
-        pass  # remove this and write the test for the constructor.
+        loc = GeoLocWrapper('1701 bryant st, denver, co')
+        self.assertEqual(loc.location.latitude, 39.743952)
+
+    def test_init_fail(self):
+        with self.assertRaises(GeopyError):
+            loc = GeoLocWrapper()
 
     # Begin adding your unit tests for the GeoLocWrapper module.
 

@@ -21,6 +21,9 @@ class GeoLocWrapper:
         """
         self.geolocator = Nominatim(user_agent="test-application")     
         self.location = self.geolocator.geocode(addr_str)
+
+        if not self.location:
+            raise GeopyError
         
     def get_distance_miles(self, dest_addr_str=None):
         """Returns the geodisic distance in miles from location and 
