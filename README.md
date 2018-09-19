@@ -11,7 +11,9 @@ This exercise is designed to give you a chance, in class, to implement functiona
 This project contains a src directory that contains the definition for a class named *GeoLocWrapper* (geolocwrapper.py) and a file for implementing **unittests** for the GeoLocWrapper class methods (test_geolocwrapper.py).
 
 ### Step 0:
-The project *requires* geopy package. Create a virtual environment for this project and install geopy in it. *Make sure to update the requirements.txt file to reflect that this project requires geopy!*
+The project **requires** geopy package. Create a virtual environment for this project and install geopy in it.
+
+> Make sure to update the requirements.txt file to reflect that this project requires geopy!
 
 ### Step 1:
 Implement the two unit tests for the GeoLocWrapper constructor. One that tests a successful instantiation and one that tests instantiation with an invalid geolocation. (E.g., When an address is not found the constructor should raise a ```GeopyError```)
