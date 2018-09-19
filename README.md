@@ -30,6 +30,10 @@ Design and implement a set of unit tests that provides *full test coverage* of t
 
 > You must make sure that at least one of your unit tests verifies that an exception is raised under certain conditions.
 
+**Run the tests.**
+
+```python test_geolocwrapper.py```
+
 ### Step 4. 
 Commit your changes and push to your remote repository. Let instructor know when your project changes are commited and pushed.
 
